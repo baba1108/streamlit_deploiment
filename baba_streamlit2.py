@@ -46,7 +46,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.title('streamlit checkpoint1')
-st.header("Financial_inclusion_dataset.csv")
+st.header("Financial inclusion dataset.csv")
 
 st.sidebar.title("Options")
 show_data = st.sidebar.checkbox("Afficher les données", value=True)
@@ -54,7 +54,7 @@ show_histograms = st.sidebar.checkbox("Afficher les histogrammes", value=True)
 show_model_evaluation = st.sidebar.checkbox("Afficher l'évaluation du modèle", value=True)
 
 # Lire le fichier CSV dans un DataFrame pandas
-data = pd.read_csv('Financial_inclusion_dataset.csv')
+data = pd.read_csv('Financial inclusion dataset.csv')
 st.dataframe(data.head())
 # Afficher les 5 premières lignes du DataFrame
 st.write("Aperçu du Dataset :")
